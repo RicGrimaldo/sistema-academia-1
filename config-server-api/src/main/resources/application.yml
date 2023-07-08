@@ -6,7 +6,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/gocahum/sistema-academia.git
+          uri: https://github.com/RicGrimaldo/sistema-academia-1.git
           default-label: master
           search-paths: config-data
 
