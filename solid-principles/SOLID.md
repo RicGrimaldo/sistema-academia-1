@@ -91,7 +91,9 @@ public class AlumnoService {
 }
 ```
 To this:
+
 <img src="./images/LSP1.PNG">
+
 The *JpaRepository* in this case needs the class to be mapped and the data type that is its respective primary key. Aside from that, and thanks to the IntelliJ IDE, we can see that it doesn't cause any errors, and eventually, it shouldn't give any errors when running either.
 
 ### Interface Segregation Principle (ISP)
@@ -100,6 +102,7 @@ Interface Segregation Principle (ISP) states that many client-specific interface
 In the project we have two examples that have already been explained. 
 
 First, the structure of the project evidences the use of this principle, due to the fact of having different classes separately with different purposes each one. For example, in the case of the *sie-api* microservice, as the previous examples, also has the same structure:
+
 <img src="./images/ISP1.PNG">
 
 Obviously one really bad practice would be have all the CRUD operations (including the connection to the database and processing the HTTP requests) in one class, and with it, breaking the ISP.
